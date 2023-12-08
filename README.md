@@ -15,5 +15,18 @@
 15. `git merge <nom_de_branche>` : Fusionne la branche spécifiée avec la branche courante.
 16. `git pull origin <branche>` : Récupère les derniers changements du dépôt distant dans la branche spécifiée et les fusionne avec la branche locale.
 17. `git tag -a <tag_name> -m <message>` : Eg ; `git tag -a v1.0 -m"Version 1 lancé"`
+18. `git tag -a <tag_name> <commit_id>` : Crée une étiquette (tag) pour le commit spécifié, permettant de marquer des versions ou des points spécifiques dans l'historique.
+19. `git diff` : Affiche les différences non encore indexées (non ajoutées à la staging area) entre le dernier commit et le répertoire de travail.
+20. `git diff <commit_id_1> <commit_id_2>` : Affiche les différences entre deux commits spécifiés.
+21. `git revert <commit_id>` : Crée un nouveau commit qui annule les changements effectués dans le commit spécifié.
+22. `git stash` : Met de côté les modifications locales non encore ajoutées au commit actuel, permettant de basculer entre les branches ou de travailler sur autre chose sans committer les changements en cours.
+23. `git stash list` : Affiche la liste des stash (réserve) existants.
+24. `git stash apply` : Applique le dernier stash sans le supprimer, permettant de récupérer les modifications mises de côté.
+25. `git stash drop` : Supprime le dernier stash après l'avoir appliqué.
+26. `git stash pop` : Applique le dernier stash et le supprime de la liste des stash.
+27. `git reset <commit_id>` : Réinitialise la staging area et le répertoire de travail au commit spécifié.
+28. `git reset --hard <commit_id>` : Réinitialise la staging area, le répertoire de travail et la branche courante au commit spécifié.
+29. `git fetch --prune` : Récupère les derniers changements du dépôt distant et supprime les branches distantes obsolètes en local.
+30. `git branch -d <nom_de_branche>` : Supprime la branche spécifiée localement après avoir fusionné ses changements.
+31. `git branch -r -d origin/<nom_de_branche>` : Supprime la branche spécifiée à distance.
 
-18. `git tag -a v1.0 <commit_id> -m <message>` : Eg; `git tag -a 0e4cdcd v1.0  -m "message"`
